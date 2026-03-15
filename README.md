@@ -1,9 +1,38 @@
 # Inteligencia Artificial: Algoritmo A\*, Heurísticas y Teoría de Juegos
 
-## Abrir Notebook en Google Colab
+## Presentación
+
+**Estudiante:** Brayan R. M.  
+**Asignatura:** Inteligencia Artificial  
+**Trabajo:** Algoritmo A*, Heurísticas y Teoría de Juegos  
+**Lenguaje utilizado:** Python  
+
+Este repositorio presenta una investigación y ejemplos prácticos sobre tres conceptos fundamentales de la inteligencia artificial:
+
+- Algoritmo de búsqueda A*
+- Heurísticas en inteligencia artificial
+- Teoría de juegos aplicada a sistemas multiagente
+
+Además, se incluyen ejemplos implementados en Python y un notebook ejecutable en Google Colab.
+
+## Abrir Notebook en Google Colab donde se encuentra los codigos de ejemplo
 
 [![Open In
 Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BrayanRM27/IA-AStar-Heuristicas-TeoriaDeJuegos/blob/main/CODIGOS.ipynb)
+
+
+------------------------------------------------------------------------
+
+
+## Contenido
+
+1. Introducción  
+2. Algoritmo A*  
+3. Heurísticas en Inteligencia Artificial  
+4. Teoría de Juegos  
+5. Ejemplos en Python  
+6. Conclusión  
+7. Bibliografía
 
 ------------------------------------------------------------------------
 
@@ -315,5 +344,26 @@ inteligencia artificial:
 -   las heurísticas
 -   la teoría de juegos
 
+
+------------------------------------------------------------------------
+
+
+
+# Bibliografía
+
+Russell, S., & Norvig, P. (2020).  
+*Artificial Intelligence: A Modern Approach*. Pearson Education.
+
+DataCamp.  
+A* Algorithm Tutorial.  
+https://www.datacamp.com/es/tutorial/a-star-algorithm
+
+The Decision Lab.  
+Heuristics: Definition and Examples.  
+https://thedecisionlab.com/es/biases/heuristics
+
+PureAI.  
+Strategy Understanding Guide.  
+https://pureai.substack.com/p/strategy-understanding-guide
 Los ejemplos implementados en Python permiten comprender cómo estos
 conceptos se aplican en sistemas reales de inteligencia artificial.
