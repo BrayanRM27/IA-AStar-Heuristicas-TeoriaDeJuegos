@@ -2,7 +2,7 @@
 
 ## Presentación
 
-**Estudiante:** Brayan R. M.  
+**Estudiante:** BRAYAN DAVID RIASCOS MURILLO  
 **Asignatura:** Inteligencia Artificial  
 **Trabajo:** Algoritmo A*, Heurísticas y Teoría de Juegos  
 **Lenguaje utilizado:** Python  
