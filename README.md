@@ -2,8 +2,8 @@
 
 ## Abrir Notebook en Google Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BrayanRM27/IA-AStar-Heuristicas-TeoriaDeJuegos/blob/main/CODIGOS.ipynb)
-
+[![Open In
+Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BrayanRM27/IA-AStar-Heuristicas-TeoriaDeJuegos/blob/main/CODIGOS.ipynb)
 
 ------------------------------------------------------------------------
 
@@ -67,12 +67,11 @@ $$
 
 donde:
 
--   $g(n)$ → costo real desde el nodo inicial hasta el nodo actual\
--   $h(n)$ → estimación heurística desde el nodo actual hasta el
-    objetivo\
--   $f(n)$ → costo total estimado
+-   g(n) → costo real desde el nodo inicial hasta el nodo actual\
+-   h(n) → estimación heurística desde el nodo actual hasta el objetivo\
+-   f(n) → costo total estimado
 
-El algoritmo siempre selecciona el nodo con el menor valor de $f(n)$.
+El algoritmo siempre selecciona el nodo con el menor valor de f(n).
 
 ------------------------------------------------------------------------
 
@@ -104,8 +103,6 @@ Esto evita que el algoritmo tenga que reevaluar nodos ya explorados.
 
 ## Estructuras de datos del algoritmo
 
-El algoritmo utiliza dos estructuras principales.
-
 ### Open List
 
 Contiene los nodos pendientes por explorar.
@@ -134,8 +131,8 @@ O(1)
 
 La complejidad del algoritmo depende de dos factores:
 
--   **b** → factor de ramificación
--   **d** → profundidad de la solución
+-   b → factor de ramificación
+-   d → profundidad de la solución
 
 ### Complejidad temporal
 
@@ -143,17 +140,11 @@ $$
 O(b^d)
 $$
 
-Esto significa que el tiempo de ejecución puede crecer exponencialmente
-dependiendo del número de nodos generados.
-
 ### Complejidad espacial
 
 $$
 O(b^d)
 $$
-
-El algoritmo debe almacenar todos los nodos generados para garantizar
-encontrar la ruta óptima.
 
 ------------------------------------------------------------------------
 
@@ -177,8 +168,6 @@ encuentra un estado de la solución de un problema.
 En lugar de explorar todas las combinaciones posibles, las heurísticas
 permiten priorizar las rutas más prometedoras.
 
-Esto transforma una búsqueda exhaustiva en una **búsqueda informada**.
-
 ------------------------------------------------------------------------
 
 ## Tipos de heurísticas
@@ -189,12 +178,8 @@ $$
 h(n) = |x_1 - x_2| + |y_1 - y_2|
 $$
 
-La distancia Manhattan se utiliza cuando el movimiento se limita a
-cuatro direcciones.
-
-Esta heurística es **admisible**, ya que en una cuadrícula donde el
-movimiento es horizontal o vertical, la distancia en forma de "L"
-representa el número mínimo de pasos necesarios para llegar al objetivo.
+Esta heurística es **admisible**, ya que nunca sobreestima el costo
+real.
 
 ------------------------------------------------------------------------
 
@@ -204,8 +189,6 @@ $$
 h(n) = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
 $$
 
-Se utiliza cuando el movimiento puede realizarse en cualquier dirección.
-
 ------------------------------------------------------------------------
 
 ### Distancia Chebyshev
@@ -213,8 +196,6 @@ Se utiliza cuando el movimiento puede realizarse en cualquier dirección.
 $$
 h(n) = \max(|x_1-x_2|, |y_1-y_2|)
 $$
-
-Se utiliza cuando el movimiento permite diagonales.
 
 ------------------------------------------------------------------------
 
@@ -246,43 +227,17 @@ de los demás.
 
 ------------------------------------------------------------------------
 
-## Árboles de juego
-
-Los juegos pueden representarse mediante **árboles de decisión**, donde:
-
--   cada nodo representa un estado del juego
--   cada rama representa una acción posible
-
-Los niveles del árbol alternan entre:
-
--   jugador MAX
--   jugador MIN
-
-------------------------------------------------------------------------
-
 ## Algoritmo Minimax
 
 El algoritmo Minimax permite determinar la mejor estrategia posible en
 juegos de dos jugadores.
 
-Principio:
-
--   MAX intenta maximizar su utilidad
--   MIN intenta minimizar la utilidad de MAX
-
 ------------------------------------------------------------------------
 
 ## Poda Alpha-Beta
 
-La poda Alpha-Beta optimiza el algoritmo Minimax eliminando ramas que no
-afectan la decisión final.
-
-Valores utilizados:
-
--   α → mejor valor para MAX
--   β → mejor valor para MIN
-
-Cuando α ≥ β se detiene la exploración de esa rama.
+La poda Alpha-Beta optimiza el algoritmo Minimax eliminando ramas
+innecesarias.
 
 ------------------------------------------------------------------------
 
@@ -304,12 +259,6 @@ resultado = decisiones[(robot1,robot2)]
 print("Robot1:",resultado[0])
 print("Robot2:",resultado[1])
 ```
-
-Interpretación:
-
-Dependiendo de las decisiones tomadas por los robots, la distribución de
-energía cambia. Este ejemplo ilustra cómo las decisiones de un agente
-afectan el resultado del otro.
 
 ------------------------------------------------------------------------
 
@@ -333,13 +282,6 @@ print("Servidor1:",u1)
 print("Servidor2:",u2)
 ```
 
-Interpretación:
-
-Cuando ambos servidores intentan usar demasiado ancho de banda se
-produce congestión.\
-Si cooperan utilizando menos ancho de banda pueden lograr un equilibrio
-beneficioso para ambos.
-
 ------------------------------------------------------------------------
 
 # Ejemplo 3: Coordinación de drones
@@ -362,12 +304,6 @@ print("Drone2:",resultado[1])
 print("Drone3:",resultado[2])
 ```
 
-Interpretación:
-
-Cuando los drones patrullan separados logran cubrir mayor territorio.
-Esto representa un escenario de cooperación donde la estrategia
-colectiva mejora el rendimiento del sistema.
-
 ------------------------------------------------------------------------
 
 # Conclusión
@@ -379,15 +315,5 @@ inteligencia artificial:
 -   las heurísticas
 -   la teoría de juegos
 
-El algoritmo A\* permite encontrar rutas óptimas combinando el costo
-real recorrido con una estimación heurística.
-
-Las heurísticas reducen el espacio de búsqueda y mejoran la eficiencia
-de los algoritmos.
-
-La teoría de juegos permite analizar escenarios donde múltiples agentes
-toman decisiones estratégicas.
-
-Los ejemplos implementados en Python permiten comprender de forma
-práctica cómo estos conceptos se aplican en sistemas de inteligencia
-artificial.
+Los ejemplos implementados en Python permiten comprender cómo estos
+conceptos se aplican en sistemas reales de inteligencia artificial.
