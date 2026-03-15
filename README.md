@@ -15,7 +15,9 @@ Este repositorio presenta una investigación y ejemplos prácticos sobre tres co
 
 Además, se incluyen ejemplos implementados en Python y un notebook ejecutable en Google Colab.
 
-## Abrir Notebook en Google Colab donde se encuentra los codigos de ejemplo
+## Abrir Notebook en Google Colab
+
+El notebook contiene la implementación en Python de los ejemplos presentados en este trabajo y puede ejecutarse directamente en Google Colab.
 
 [![Open In
 Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BrayanRM27/IA-AStar-Heuristicas-TeoriaDeJuegos/blob/main/CODIGOS.ipynb)
